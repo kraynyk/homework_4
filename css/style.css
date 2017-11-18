@@ -1,0 +1,178 @@
+body {
+  background-image: url(../img/background.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.wrapper {
+  width: 900px;
+  margin: 230px auto;
+  padding: 60px;
+  background-color: #fff;
+}
+
+.wrapper h2 {
+  font-weight: 400;
+  font-family: 'Oswald', sans-serif;
+  color: #555e74;
+}
+
+.wrapper h3 {
+  font-weight: 400;
+  font-family: 'Oswald', sans-serif;
+  color: #555e74;
+}
+
+.wrapper p {
+  font-family: 'Lato', sans-serif;
+}
+
+.wrap1 {
+  display: inline-block;
+  border-bottom: 1px solid #cfcfcf;
+  padding-bottom: 50px;
+}
+
+
+.box1 {
+  display:inline-block;
+  width: 630px;
+}
+
+.box1 img{
+  width: 360px;
+  height: 275px;
+  float: left;
+  padding-right: 20px;
+}
+
+.box2 {
+  display: inline-block;
+  width: 240px;
+  padding-left: 20px;
+}
+
+.box2 ul {
+  list-style: none;
+}
+
+.box2 ul li {
+  position: relative;
+}
+
+.box2  ul li::before {
+  left: -30px;
+  top: 5px;
+  position: absolute;
+  content: "";
+  border-radius: 50%;
+  background-color: #43ace7;
+  width: 20px;
+  height: 20px;
+  color: #fff;
+  text-align: center;
+  line-height: 18px;
+  font-family: 'Lato', sans-serif;
+}
+
+.box2  ul li:first-child::before {
+  content: '1';
+}
+
+.box2  ul li:nth-child(2)::before {
+  content: '2';
+}
+
+.box2  ul li:last-child::before {
+  content: '3';
+}
+
+.wrap2 {
+  display: inline-block;
+  margin-top: 60px;
+}
+
+.box3 {
+  display: inline-block;
+  width: 630px;
+}
+
+.box3 ul {
+  list-style: none;
+}
+
+.box3 ul li {
+  position: relative;
+  margin-bottom: 20px;
+  display: inline-block;
+  width: 49%;
+  font-family: 'Lato', sans-serif
+}
+
+.box3  ul li::before {
+  left: -30px;
+  top: -1px;
+  position: absolute;
+  content: "\2192";
+  color: #369cf0;
+}
+
+.box4 {
+  position: relative;
+  top: -225px;
+  width: 240px;
+  padding-left: 20px;
+  display: inline-block;
+}
+
+.quote {
+  display: inline-block;
+  border-radius: 6px;
+  width: 200px;
+  background-color: #fcfafa;
+  padding: 10px;
+  color: #263555;
+  position: relative;
+  border: 1px solid #a7a7a7;
+}
+
+.quote::after {
+  position: absolute;
+  top: 203px;
+  left: 85px;
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 20px 25px 0 25px;
+  border-color: #fcfafa transparent transparent transparent;
+}
+
+.quote::before {
+  position: absolute;
+  top: 205px;
+  left: 85px;
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 20px 25px 0 25px;
+  border-color: #a7a7a7 transparent transparent transparent;
+}
+
+.quote p::after,
+.quote p::before {
+  content: "\0022";
+}
+
+.style p:first-child {
+  position: absolute;
+  top: 300px;
+  left: 84px;
+  color: #263555;
+}
+
+.style p:last-child {
+  position: absolute;
+  top: 330px;
+}
